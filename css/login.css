@@ -1,0 +1,62 @@
+body {
+  background-color: #fffeff; }
+
+#login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+  #login ul li:nth-child(1) img {
+    display: block;
+    width: 42.93%;
+    margin: 0 auto; }
+  #login ul li .inputBox {
+    width: 82.67%;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+    border-radius: 4px;
+    overflow: hidden; }
+    #login ul li .inputBox input {
+      display: block;
+      width: 85%;
+      line-height: 0.8rem;
+      border: 0px;
+      background-color: #f8f6f9;
+      font-size: 0.28rem;
+      text-indent: 0.8rem;
+      color: #333333; }
+    #login ul li .inputBox input::-ms-input-placeholder {
+      color: #bfbfbf;
+      line-height: 0.8rem; }
+    #login ul li .inputBox input::-webkit-input-placeholder {
+      color: #bfbfbf;
+      line-height: 0.8rem; }
+    #login ul li .inputBox input::-moz-placeholder {
+      color: #bfbfbf;
+      line-height: 0.8rem; }
+    #login ul li .inputBox > div:nth-child(1) {
+      border-bottom: 1px solid #d2d2d2; }
+      #login ul li .inputBox > div:nth-child(1) input {
+        width: 100%; }
+    #login ul li .inputBox > div {
+      position: relative; }
+      #login ul li .inputBox > div > div {
+        position: absolute;
+        width: 0.78rem;
+        height: 0.78rem;
+        background-color: #f8f6f9; }
+        #login ul li .inputBox > div > div img {
+          height: 0.36rem;
+          margin: 0 auto;
+          margin-top: 0.22rem; }
+      #login ul li .inputBox > div > div:nth-child(2) {
+        right: 0;
+        top: 0; }
+
+/*# sourceMappingURL=login.css.map */
