@@ -1,0 +1,62 @@
+$(function(){
+	//查看秘密
+	$('.eye').bind('click',function(){
+		if($(this).attr('isClose')=='true')
+		{
+			
+			$(this).attr('isClose','false');
+			$(this).find('img').attr('src','img/eye.png');
+			$('.password').attr('type','text');
+		}else{
+			$(this).attr('ichangePsdsClose','true');
+			$(this).find('img').attr('src','img/eyec.png');
+			$('.password').attr('type','password');
+		}	
+	});
+	//忘记密码
+	$('.forget').on('click',function(){
+		$('#changePsd').show().stop().animate({left:'0%'},400);
+	});
+	$('.back').on('click',function(){
+		$('#changePsd').stop().animate({left:'100%'},400,function(){
+			$(this).hide();
+		});
+		$('.step01').show();
+		$('.step02').hide();
+		$('input').val('');
+	});
+	//获取验证码
+	$('.getCode').bind('click',function(){
+		$(this).attr('disabled','disabled');
+		var count=60;
+		$(this).html(count+'s');		
+		var time = setInterval(function(){
+			count--;
+			if(count==-1){
+				clearInterval(time);
+				$('.getCode').html('获取验证码');
+			}else{
+				$('.getCode').html(count+'s');
+			}
+		},1000);
+	});
+	//出现清除按钮
+	$('.step02').find('input').bind('input',function(){
+		if($(this).val().length>0)
+		{
+			$(this).siblings('.clearinput').show();
+		}else{
+			$(this).siblings('.clearinput').hide();
+		}
+	});
+	//清除input
+	$('.clearinput').bind('click',function(){
+		$(this).siblings('input').val("");
+		$(this).hide();
+	});
+	//下一步
+	$('#next').on('click',function(){
+		$('.step02').show();
+		$('.step01').hide();
+	});
+});

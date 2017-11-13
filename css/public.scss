@@ -1,0 +1,148 @@
+//弹窗
+.popWindow{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    .popBox{
+        background-color: white;
+        width: 80%;
+        border-radius: 10px;
+        ul li:nth-child(1) p{
+            font-size: 0.3rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0.55rem;
+            color: #272529;
+            padding-top: 0.2rem;
+            word-break: break-all;
+            text-overflow: ellipsis;
+             display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+            -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+             -webkit-line-clamp: 1; /** 显示的行数 **/
+             overflow: hidden;  /** 隐藏超出的内容 **/
+        }
+        ul li:nth-child(2) p{
+            font-size: 0.26rem;
+            text-align: center;
+            line-height: 0.55rem;
+            color: #666666;
+            padding-bottom: 0.2rem;
+            word-break: break-all;
+            text-overflow: ellipsis;
+             display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+            -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+             -webkit-line-clamp: 1; /** 显示的行数 **/
+             overflow: hidden;  /** 隐藏超出的内容 **/
+        }
+        ul li:nth-child(2){
+            border-bottom: 1px solid #d2d2d2;
+        }
+        ul li:nth-child(3){
+            .onlyOne{
+                width: 100%;
+                height: 0.8rem;
+                button{
+                    width: 100%;
+                    display: block;
+                    height: 0.8rem;
+                    color: #3674df;
+                    font-size: 0.28rem;
+                    background-color: rgba(0,0,0,0);
+                }
+            }
+            .onlyTwo{
+                width: 100%;
+                height: 0.8rem;
+                position: relative;
+                .oLeft{
+                    width: 50%;
+                }
+                .oRight{
+                    width: 50%;
+                }
+                span{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    margin-left: -0.5px;
+                    border-right: 1px solid #d2d2d2;
+                    height: 0.8rem;
+                }
+                button{
+                    width: 100%;
+                    display: block;
+                    height: 0.8rem;
+                    color: #3674df;
+                    font-size: 0.28rem;
+                    background-color: rgba(0,0,0,0);
+                }
+            }
+        }
+        
+    }
+}
+.noResult {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    img{
+        width: 40%;
+        margin: 0 auto;
+    }
+    p{
+        color: #999999;
+        text-align: center;
+        line-height: 0.6rem;
+        font-size: 0.26rem;
+        margin-bottom: 0.1rem;
+    }
+    a{
+        display: block;
+        background-color: #60116a;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 0.3rem;
+        color: white;
+        line-height: 0.7rem;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+.pHead {
+    font-size: 0.32rem;
+    height: 0.8rem;
+    text-align: center;
+    color: #020202;
+    background: #fdfdfd;
+    a {
+        position: absolute;
+        left: 4%;
+        height: 0.32rem;
+        margin-top: 0.24rem;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+    p{
+        line-height: 0.8rem;
+    }
+}
