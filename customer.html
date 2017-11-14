@@ -27,7 +27,7 @@
 					</ul>
 					<div class="clearl"></div>
 				</div>				
-				<a href="###" class="back"><img src="img/back.png"/></a>
+				<a href="###" class="back backPrev"><img src="img/back.png"/></a>
 			</div>
 			<div class="messageOut">
 				<div class="messageIn">
@@ -72,7 +72,7 @@
 									<p>详细地址</p>
 								</div>
 								<div class="floatl mr">
-									<p>琶洲商业广场11栋琶洲商业广场11栋琶洲商业广场11栋琶洲商业广场11栋</p>
+									<p class="address">琶洲商业广场11栋琶洲商业广场11栋琶洲商业广场11栋琶洲商业广场11栋</p>
 								</div>
 								<div class="clearl"></div>
 							</li>
@@ -81,7 +81,7 @@
 									<p>房屋类型</p>
 								</div>
 								<div class="floatl mr">
-									<p>三房两厅</p>
+									<p class="room" tid=4>三房两厅</p>
 								</div>
 								<div class="clearl"></div>
 							</li>
@@ -90,7 +90,7 @@
 									<p>装修进度</p>
 								</div>
 								<div class="floatl mr">
-									<p>装修中</p>
+									<p class="decorate" did=2>方案</p>
 								</div>
 								<div class="clearl"></div>
 							</li>
@@ -105,7 +105,7 @@
 									<p>跟进状态</p>
 								</div>
 								<div class="floatl mr">
-									<p>跟进中</p>
+									<p class="follow" fid=1>跟进中</p>
 								</div>
 								<div class="clearl"></div>
 							</li>
@@ -154,9 +154,96 @@
 				</div>
 			</div>
 			<div class="btns">
-				<button>修改信息</button>
+				<button id="exm">修改信息</button>
 			</div>
 		</div>
+		<div id="exMessage">
+			<div class="pHead">
+				<a href="###" class="back backToMessage"><img src="img/back.png"/></a>
+				<p>修改信息</p>
+			</div>
+			<div class="messageOut">
+				<div class="messageIn">
+					<div class="messageBox">
+						<ul>
+							<li>
+								<div class="floatl ml">
+									<p>详细地址</p>
+								</div>
+								<div class="floatl mr">
+									<textarea class="exAddress" placeholder="街道门牌信息"></textarea>
+								</div>
+								<div class="clearl"></div>
+							</li>
+							<li>
+								<div class="floatl ml">
+									<p>房屋类型</p>
+								</div>
+								<div class="floatl mr">
+									<p></p>
+									<img src="img/moreOrder.png"/>
+									<select class="roomType">
+										<option value="0">一房一厅</option>
+										<option value="1">两房一厅</option>
+										<option value="2">两房两厅</option>
+										<option value="3">三房一厅</option>
+										<option value="4">三房两厅</option>
+										<option value="5">四房一厅</option>
+										<option value="6">四房两厅</option>
+									</select>
+								</div>
+								<div class="clearl"></div>
+							</li>
+							<li>
+								<div class="floatl ml">
+									<p>装修进度</p>
+								</div>
+								<div class="floatl mr">
+									<p></p>
+									<img src="img/moreOrder.png"/>
+									<select class="decorating">
+										<option value="0">进店</option>
+										<option value="1">量尺</option>
+										<option value="2">方案</option>
+										<option value="3">查房</option>
+										<option value="4">复尺</option>
+										<option value="5">成交</option>
+										<option value="6">下单</option>
+									</select>
+								</div>
+								<div class="clearl"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="messageIn">
+					<div class="messageBox">
+						<ul>
+							<li>
+								<div class="floatl ml">
+									<p>跟进状态</p>
+								</div>
+								<div class="floatl mr">
+									<p></p>
+									<img src="img/moreOrder.png"/>
+									<select class="followType">
+										<option value="0">未跟进</option>
+										<option value="1">跟进中</option>
+										<option value="2">已完成</option>
+										<option value="3">已取消</option>
+									</select>
+								</div>
+								<div class="clearl"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="btns">
+				<button id="setSuccess">保存</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/public.js" ></script>
 		<script type="text/javascript" src="js/customer.js" ></script>
 	</body>
 </html>

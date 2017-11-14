@@ -1,2 +1,203 @@
-body{background-color:#f4f4f4}#customer .pHead .btnBox{position:absolute;width:46%;left:27%;height:0.5rem;top:0.15rem;margin-top:-2px}#customer .pHead .btnBox ul li{float:left;width:49.5%}#customer .pHead .btnBox ul li button{display:block;width:100%;line-height:0.5rem;font-size:0.26rem;background-color:white;color:#ab012e;border:2px solid #ab012e}#customer .pHead .btnBox ul li .bActive{background-color:#ab012e;color:white}#customer .pHead .btnBox ul li:nth-child(1) button{border-radius:8px 0px 0px 8px;border-right:0px}#customer .pHead .btnBox ul li:nth-child(2) button{border-radius:0px 8px 8px 0px;border-left:0px}#customer .messageOut{width:100%}#customer .messageOut .messageIn{width:100%;background-color:white;margin-top:0.2rem}#customer .messageOut .messageIn .messageBox{width:92%;margin:0 auto;position:relative}#customer .messageOut .messageIn .messageBox .ml{color:#999999;min-height:0.8rem;width:23.5%}#customer .messageOut .messageIn .messageBox .mr{color:#000000;min-height:0.8rem;position:relative;width:76.5%}#customer .messageOut .messageIn .messageBox .mr img{position:absolute;height:0.32rem;left:46%;top:0.24rem}#customer .messageOut .messageIn .messageBox .mr p{line-height:0.5rem;padding:0.15rem 0}#customer .messageOut .messageIn .messageBox ul li{display:block;border-bottom:1px solid #e2e2e2}#customer .messageOut .messageIn .messageBox ul li div p{line-height:0.8rem;font-size:0.28rem}#customer .messageOut .messageIn .messageBox ul li:last-child{border:0}#customer .btns{height:0.8rem;position:fixed;bottom:0;width:100%}#customer .btns button{display:block;width:100%;margin:0 auto;height:0.8rem;font-size:0.28rem;color:white;background-color:#ab012e}#customer .new{width:92%;padding:0% 4%;margin-top:0.2rem;background-color:white;border-bottom:1px solid #e2e2e2}#customer .new ul li p{line-height:0.8rem;font-size:0.3rem;color:#1b1b1b}#customer .new ul li:nth-child(2){height:1.5rem;padding:4%;background-color:#f0f0f0}#customer .new ul li:nth-child(2) textarea{background-color:#f0f0f0;width:100%;height:100%;resize:none;border:0;line-height:0.4rem}#customer .new ul li:nth-child(2) textarea:-ms-input-placeholder{color:#8d8d8d}#customer .new ul li:nth-child(2) textarea:-webkit-input-placeholder{color:#8d8d8d}#customer .new ul li:nth-child(2) textarea:-moz-placeholder{color:#8d8d8d}#customer .new ul li:nth-child(3){height:1.0rem;position:relative;width:100%}#customer .new ul li:nth-child(3) button{display:block;position:absolute;right:0;margin-top:0.25rem;height:0.5rem;width:1.2rem;color:#ab012e;border:1px solid #ab012e;border-radius:4px;background-color:white}#customer .old{width:92%;padding:0% 4%;background-color:white}#customer .old ul li:nth-child(1){border-bottom:1px solid #e2e2e2}#customer .old ul li:nth-child(1) p{line-height:0.8rem;font-size:0.3rem;color:#1b1b1b}#customer .old ul li .record{padding-bottom:0.2rem;border-bottom:1px solid #e2e2e2}#customer .old ul li .record p{color:#666666;font-size:0.26rem;line-height:0.5rem;padding:0.15rem 0}#customer .old ul li .record span{display:block;font-size:0.24rem;color:#8d8d8d;text-indent:0.32rem;background:url(../img/time.png) no-repeat left center;background-size:auto 0.24rem}#customer .old ul li .record:last-child{border:0px}
+body {
+  background-color: #f4f4f4; }
+
+#customer {
+  position: relative; }
+  #customer .pHead .btnBox {
+    position: absolute;
+    width: 46%;
+    left: 27%;
+    height: 0.5rem;
+    top: 0.15rem;
+    margin-top: -2px; }
+    #customer .pHead .btnBox ul li {
+      float: left;
+      width: 49.5%; }
+      #customer .pHead .btnBox ul li button {
+        display: block;
+        width: 100%;
+        line-height: 0.5rem;
+        font-size: 0.26rem;
+        background-color: white;
+        color: #ab012e;
+        border: 2px solid #ab012e; }
+      #customer .pHead .btnBox ul li .bActive {
+        background-color: #ab012e;
+        color: white; }
+    #customer .pHead .btnBox ul li:nth-child(1) button {
+      border-radius: 8px 0px 0px 8px;
+      border-right: 0px; }
+    #customer .pHead .btnBox ul li:nth-child(2) button {
+      border-radius: 0px 8px 8px 0px;
+      border-left: 0px; }
+  #customer .new {
+    width: 92%;
+    padding: 0% 4%;
+    margin-top: 0.2rem;
+    background-color: white;
+    border-bottom: 1px solid #e2e2e2; }
+    #customer .new ul li p {
+      line-height: 0.8rem;
+      font-size: 0.3rem;
+      color: #1b1b1b; }
+    #customer .new ul li:nth-child(2) {
+      height: 1.5rem;
+      padding: 4%;
+      background-color: #f0f0f0; }
+      #customer .new ul li:nth-child(2) textarea {
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 100%;
+        resize: none;
+        border: 0;
+        line-height: 0.4rem;
+        font-size: 0.26rem; }
+      #customer .new ul li:nth-child(2) textarea:-ms-input-placeholder {
+        color: #8d8d8d; }
+      #customer .new ul li:nth-child(2) textarea:-webkit-input-placeholder {
+        color: #8d8d8d; }
+      #customer .new ul li:nth-child(2) textarea:-moz-placeholder {
+        color: #8d8d8d; }
+    #customer .new ul li:nth-child(3) {
+      height: 1.0rem;
+      position: relative;
+      width: 100%; }
+      #customer .new ul li:nth-child(3) button {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-top: 0.25rem;
+        height: 0.5rem;
+        width: 1.2rem;
+        color: #ab012e;
+        border: 1px solid #ab012e;
+        border-radius: 4px;
+        background-color: white;
+        font-size: 0.24rem; }
+  #customer .old {
+    width: 92%;
+    padding: 0% 4%;
+    background-color: white; }
+    #customer .old ul li:nth-child(1) {
+      border-bottom: 1px solid #e2e2e2; }
+      #customer .old ul li:nth-child(1) p {
+        line-height: 0.8rem;
+        font-size: 0.3rem;
+        color: #1b1b1b; }
+    #customer .old ul li .record {
+      padding-bottom: 0.2rem;
+      border-bottom: 1px solid #e2e2e2; }
+      #customer .old ul li .record p {
+        color: #666666;
+        font-size: 0.26rem;
+        line-height: 0.5rem;
+        padding: 0.15rem 0; }
+      #customer .old ul li .record span {
+        display: block;
+        font-size: 0.24rem;
+        color: #8d8d8d;
+        text-indent: 0.32rem;
+        background: url(../img/time.png) no-repeat left center;
+        background-size: auto 0.24rem; }
+    #customer .old ul li .record:last-child {
+      border: 0px; }
+
+.btns {
+  height: 0.8rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  .btns button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 0.8rem;
+    font-size: 0.28rem;
+    color: white;
+    background-color: #ab012e; }
+
+.messageOut {
+  width: 100%; }
+  .messageOut .messageIn {
+    width: 100%;
+    background-color: white;
+    margin-top: 0.2rem; }
+    .messageOut .messageIn .messageBox {
+      width: 92%;
+      margin: 0 auto;
+      position: relative; }
+      .messageOut .messageIn .messageBox .ml {
+        color: #999999;
+        min-height: 0.8rem;
+        width: 23.5%; }
+      .messageOut .messageIn .messageBox .mr {
+        color: #000000;
+        min-height: 0.8rem;
+        position: relative;
+        width: 76.5%; }
+        .messageOut .messageIn .messageBox .mr img {
+          position: absolute;
+          height: 0.32rem;
+          left: 46%;
+          top: 0.24rem; }
+        .messageOut .messageIn .messageBox .mr p {
+          width: 100%;
+          line-height: 0.5rem;
+          padding: 0.15rem 0; }
+        .messageOut .messageIn .messageBox .mr select {
+          display: block;
+          width: 100%;
+          line-height: 0.8rem;
+          height: 0.8rem;
+          border: 0;
+          font-size: 0.28rem;
+          background-color: white;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+        .messageOut .messageIn .messageBox .mr textarea {
+          display: block;
+          width: 100%;
+          line-height: 0.4rem;
+          height: 1.2rem;
+          border: 0;
+          padding: 0.22rem 0;
+          font-size: 0.28rem;
+          resize: none; }
+        .messageOut .messageIn .messageBox .mr textarea::-ms-input-placeholder {
+          color: #999999;
+          font-size: 0.28rem; }
+        .messageOut .messageIn .messageBox .mr textarea::-moz-placeholder {
+          color: #999999;
+          font-size: 0.28rem; }
+        .messageOut .messageIn .messageBox .mr textarea::-webkit-input-placeholder {
+          color: #999999;
+          font-size: 0.28rem; }
+      .messageOut .messageIn .messageBox ul li {
+        display: block;
+        border-bottom: 1px solid #e2e2e2; }
+      .messageOut .messageIn .messageBox ul li div p {
+        width: 100%;
+        line-height: 0.8rem;
+        font-size: 0.28rem; }
+      .messageOut .messageIn .messageBox ul li:last-child {
+        border: 0; }
+
+#exMessage {
+  position: fixed;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  display: none; }
+  #exMessage .messageOut .messageIn .messageBox ul li div p {
+    color: #333333; }
+  #exMessage .messageOut .messageIn .messageBox .mr img {
+    left: 94%;
+    background-color: white; }
+  #exMessage .btns {
+    position: absolute; }
+
 /*# sourceMappingURL=customer.css.map */

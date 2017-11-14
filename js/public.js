@@ -19,6 +19,10 @@ function popw(fp,sp,index,callBack,e){
 	//关闭弹窗事件
 	$('.confirm').on('click',function(){
 		$('.popWindow').remove();
+		if(index==1)
+		{
+			callBack();
+		}	
 	});	
 	if(index==2)
 	{	
