@@ -54,7 +54,7 @@ $(function() {
 		 * 已取消   fid为3
 		 * */
 		var fid = $('.follow').attr('fid');
-		$(".followType  option[value='" + fid + "'] ").attr("selected", true);
+		// $(".followType  option[value='" + fid + "'] ").attr("selected", true);
 		$('.roomType').siblings('p').html($('.roomType').children('option:selected').html());
 		$('.decorating').siblings('p').html($('.decorating').children('option:selected').html());
 		$('.followType').siblings('p').html($('.followType').children('option:selected').html());
@@ -89,15 +89,15 @@ $(function() {
 		});
 	});
 	//返回上一个页面
-	$('.backPrev').bind('click', function() {
-		var index = window.location.search.toString().replace('?v=',"");
-		if(index==0)
-		{
-			window.location.href='index.html';
-		}else{
-			window.location.href='order.html';
-		}
-	});
+	// $('.backPrev').bind('click', function() {
+	// 	var index = window.location.search.toString().replace('?v=',"");
+	// 	if(index==0)
+	// 	{
+	// 		window.location.href='index.html';
+	// 	}else{
+	// 		window.location.href='order.html';
+	// 	}
+	// });
 });
 	
 	
