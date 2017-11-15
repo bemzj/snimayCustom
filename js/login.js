@@ -5,11 +5,12 @@ $(function(){
 		{
 			
 			$(this).attr('isClose','false');
-			$(this).find('img').attr('src','img/eye.png');
+			$(this).find('img').attr('src',APP_PATH+'/img/eye.png');
 			$('.password').attr('type','text');
 		}else{
+            $(this).attr('isClose','true');
 			$(this).attr('ichangePsdsClose','true');
-			$(this).find('img').attr('src','img/eyec.png');
+			$(this).find('img').attr('src',APP_PATH+'/img/eyec.png');
 			$('.password').attr('type','password');
 		}	
 	});

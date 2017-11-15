@@ -21,7 +21,10 @@ function popw(fp,sp,index,callBack,e){
 		$('.popWindow').remove();
 		if(index==1)
 		{
-			callBack();
+            if (typeof(callBack) == 'function') {
+                callBack();
+
+            }
 		}	
 	});	
 	if(index==2)
@@ -37,4 +40,44 @@ function popw(fp,sp,index,callBack,e){
 		$('.onlyTwo').hide();
 	}
 	
+}
+//通用提交
+/*通用ajax*/
+function AjaxP(url,method,data,callback){
+
+    $.ajax({
+        url: url,
+        cache: false,
+        dataType: 'JSON',
+        type: method,
+        data: data,
+        success: function(data) {
+
+            if (data == null || data == undefined || data == '') {
+                popw('温馨提示','数据返回错误',1);
+                return false;
+            }
+            if(data.token){
+                $('[name="__token__"]').attr('value',data.token)
+            }
+            if (data.code == 1) {
+                if (typeof(callback) == 'function') {
+                    callback(data);
+
+                }
+                return true;
+            }else {
+
+                popw('温馨提示',data.msg,1);
+                return false;
+            }
+        },
+        error : function(XMLHttpRequest, textStatus, errorThrown) {
+            switch(XMLHttpRequest.status) {
+                case 404 : popw('温馨提示','404错误',1); break;
+                case 500 : popw('温馨提示','505错误',1); break;
+            }
+            return false;
+        }
+    });
 }
